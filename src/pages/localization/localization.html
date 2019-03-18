@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Localizacion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-6.414057612419129%2C38.67606235511563%2C-6.40903651714325%2C38.678897545092575&amp;layer=mapnik&amp;marker=38.67748038282748%2C-6.411547064781189"></iframe>
+  <ion-grid>
+    <ion-row>
+      <ion-item>
+        <p class="titleInformationItem">Dirección</p>
+        <p>C/Coria, 11</p>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <p class="titleInformationItem">Teléfono</p>
+        <p (click)="call()">{{numberPhone}}</p>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <p class="titleInformationItem">Fax</p>
+        <p>924017781</p>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <p class="titleInformationItem">E-mail</p>
+        <p>ies.arroyoharnina@edu.juntaex.es</p>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <p class="titleInformationItem">Código de Centro</p>
+        <p>06006887</p>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+</ion-content>
