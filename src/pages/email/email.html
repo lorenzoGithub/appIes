@@ -1,0 +1,30 @@
+<!--
+  Generated template for the EmailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>I.E.S Arroyo Harnina</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <div padding>
+     <ion-item>
+        <ion-label color="primary" stacked></ion-label>
+        <ion-input [(ngModel)]="asunto" type="text" placeholder="Asunto"></ion-input>
+     </ion-item>
+     <ion-item>
+           <ion-label color="primary" stacked></ion-label>
+           <ion-input [(ngModel)]="cuerpo" type="text" placeholder="Cuerpo"></ion-input>
+        </ion-item>
+        <ion-item>
+              <ion-label color="primary" stacked>{{para}}</ion-label>
+           </ion-item>
+     <button ion-button block (click)="send()">Enviar</button>
+  </div>
+  
+</ion-content>

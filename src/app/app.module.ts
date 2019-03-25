@@ -1,3 +1,4 @@
+import { EmailPage } from './../pages/email/email';
 import { ContactPage } from './../pages/contact/contact';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -8,7 +9,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { EmailComposer } from '@ionic-native/email-composer';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InformacionPage } from '../pages/informacion/informacion';
@@ -23,7 +24,7 @@ import { EnlacesPage } from '../pages/enlaces/enlaces';
     LocalizationPage,
     EnlacesPage,
     ContactPage,
-    TabsPage
+    TabsPage,EmailPage
   ],
   imports: [
     BrowserModule,
@@ -37,13 +38,14 @@ import { EnlacesPage } from '../pages/enlaces/enlaces';
     LocalizationPage,
     EnlacesPage,
     ContactPage,
-    TabsPage
+    TabsPage,EmailPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     CallNumber,
     InAppBrowser,
+    EmailComposer,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
